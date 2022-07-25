@@ -1,3 +1,8 @@
+:root
+{
+    --val: 16;
+}
+
 body
 {
     display: grid;
@@ -5,13 +10,11 @@ body
     align-items: center;
 }
 
-
-
 #container
 {
     display: grid;
-    grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
+    grid-template-columns: repeat(var(--val), 30px);
+    grid-template-rows: repeat(var(--val), 30px);
 }
 
 #container > div
