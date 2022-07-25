@@ -13,8 +13,10 @@ body
 #container
 {
     display: grid;
-    grid-template-columns: repeat(var(--val), 30px);
-    grid-template-rows: repeat(var(--val), 30px);
+    grid-template-columns: repeat(var(--val), auto);
+    grid-template-rows: repeat(var(--val), auto);
+    width: 960px;
+    height: 960px;
 }
 
 #container > div
