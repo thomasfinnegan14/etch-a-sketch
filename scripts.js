@@ -29,6 +29,7 @@ gridbtn.addEventListener("click", function(event)
     }
 
     buildGrid();
+    currentSketchSize.textContent = "Current Canvas Size: " + gridval + "x" + gridval;
 
 });
 
@@ -49,3 +50,7 @@ function buildGrid()
     
     }
 }
+
+const currentSketchSize = document.querySelector("#current");
+
+currentSketchSize.textContent = "Current Canvas Size: " + gridval + "x" + gridval;
