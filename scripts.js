@@ -54,3 +54,15 @@ function buildGrid()
 const currentSketchSize = document.querySelector("#current");
 
 currentSketchSize.textContent = "Current Canvas Size: " + gridval + "x" + gridval;
+
+const resetbtn = document.querySelector("#resetbtn");
+
+resetbtn.addEventListener("click", function(event)
+{
+    while (container.firstChild)
+    {
+        container.removeChild(container.firstChild);
+    }
+
+    buildGrid();
+})
